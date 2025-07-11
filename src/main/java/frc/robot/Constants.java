@@ -12,6 +12,9 @@ import static edu.wpi.first.units.Units.MetersPerSecond;
 import static edu.wpi.first.units.Units.MetersPerSecondPerSecond;
 import static edu.wpi.first.units.Units.Second;
 import static edu.wpi.first.units.Units.RPM;
+
+import edu.wpi.first.math.geometry.Pose2d;
+import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.util.Units;
 import edu.wpi.first.units.measure.Angle;
 import edu.wpi.first.units.measure.Distance;
@@ -206,4 +209,29 @@ public final class Constants {
     
     public static final double kWristOffset = 141.0;
   }
+public static final Pose2d SOUTH_FACE_POSE = new Pose2d(
+                Units.inchesToMeters(144.003),
+                Units.inchesToMeters(158.500),
+                Rotation2d.fromDegrees(0));
+public static final Pose2d SOUTHWEST_FACE_POSE = new Pose2d(
+                Units.inchesToMeters(160.373),
+                Units.inchesToMeters(186.857),
+                Rotation2d.fromDegrees(300));
+public static final Pose2d NORTHWEST_FACE_POSE = new Pose2d(
+                Units.inchesToMeters(193.116),
+                Units.inchesToMeters(186.858),
+                Rotation2d.fromDegrees(240));
+public static final Pose2d NORTH_FACE_POSE = new Pose2d(
+                Units.inchesToMeters(209.489),
+                Units.inchesToMeters(158.502),
+                Rotation2d.fromDegrees(180));
+public static final Pose2d NORTHEAST_FACE_POSE = new Pose2d(
+                Units.inchesToMeters(193.118),
+                Units.inchesToMeters(130.145),
+                Rotation2d.fromDegrees(120));
+public static final Pose2d SOUTHEAST_FACE_POSE = new Pose2d(
+                Units.inchesToMeters(160.375),
+                Units.inchesToMeters(130.144),
+                Rotation2d.fromDegrees(60));
+
 }
